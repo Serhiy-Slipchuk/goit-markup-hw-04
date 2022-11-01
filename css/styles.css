@@ -166,15 +166,11 @@ img {
 }
 
 .header-envelope-icon {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
     fill: currentColor;
 }
 
 .header-smartphone-icon {
-    width: 10px;
-    height: 16px;
     margin-right: 10px;
     fill: currentColor;
 }
@@ -244,13 +240,8 @@ img {
     margin-right: 30px;
 }
 
-.features-icon {
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-}
-
 .features-subtitle {
+    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -360,8 +351,6 @@ img {
 }
 
 .team-social-icon {
-    width: 44px;
-    height: 44px;
     fill: currentColor;
 }
 
@@ -394,8 +383,6 @@ img {
 }
 
 .clients-svg {
-    width: 106px;
-    height: 60px;
     fill: currentColor;
 }
 
@@ -489,8 +476,6 @@ img {
 }
 
 .footer-social-icon {
-    width: 44px;
-    height: 44px;
     fill: currentColor;
 }
 
