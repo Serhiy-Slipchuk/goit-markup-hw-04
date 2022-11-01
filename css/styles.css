@@ -8,6 +8,7 @@
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
     --dark-bg-color: #2F303A;
+    --icon-color: #AFB1B8;
 }
 
 body {
@@ -144,11 +145,13 @@ img {
 }
 
 .header-contacts-item:not(:first-child) {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .header-contacts-link {
     display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -162,10 +165,34 @@ img {
     color: var(--accent-color);
 }
 
+.header-envelope-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.header-smartphone-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 /* ----------------------------------------------HERO SECTION------------------------- */
 .hero-section {
+    max-width: 1600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     text-align: center;
-    background-color: var(--dark-bg-color);
+    background-color: #C4C4C4;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/image08.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
@@ -215,6 +242,12 @@ img {
 
 .features-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.features-icon {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
 }
 
 .features-subtitle {
@@ -297,11 +330,76 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-        /* identical to box height */
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--primary-text-color);
 }
+
+.team-social-list {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.team-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-color);
+}
+
+.team-social-link:hover {
+    color: var(--light-text-color);
+    background-color: var(--accent-color);
+}
+
+.team-social-icon {
+    width: 44px;
+    height: 44px;
+    fill: currentColor;
+}
+
+/* --------------------------------------------- C L I E N T S ------------------------------------------------------------------------------ */
+
+.clients-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link {
+    display: block;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.clients-svg {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+
 
 /* --------------------------------------------FOOTER----------------------------- */
 .footer {
@@ -309,6 +407,16 @@ img {
     padding-bottom: 60px;
 
     background-color: var(--dark-bg-color);
+}
+
+.footer-columns {
+    display: flex;
+}
+
+
+/* -------FOOTER FIRST COLUMN------------------------ */
+.footer-first-column {
+    width: 231px;
 }
 
 .footer-logo {
@@ -343,7 +451,48 @@ img {
     color: var(--light-text-color);
 }
 
+/* ------------FOOTER SECOND COLUMN------------------------ */
 
+.footer-second-column {
+    margin-left: 70px;
+    padding-top: 12px;
+}
+
+.footer-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+}
+
+.footer-social-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--light-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover {
+    background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+    width: 44px;
+    height: 44px;
+    fill: currentColor;
+}
 
 /* --------------------------------------------- PORTFOLIO------------------------------------- */
 
