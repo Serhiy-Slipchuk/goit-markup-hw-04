@@ -35,11 +35,11 @@ img {
     display: block;
 }
 
-.nounderline-link {
+.link {
     text-decoration: none;
 }
 
-.simple-items {
+.item {
     list-style-type: none;
 }
 
@@ -67,6 +67,16 @@ img {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -259,7 +269,18 @@ img {
     color: var(--primary-text-color);
 }
 
-/* --------------------------------------------OUR WORK--------------------------- */
+.features-icon {
+    display: block;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+}
+
+/* --------------------------------------------OUR WORK SECTION--------------------------- */
 
 .section-work {
     padding-bottom: 94px;
@@ -274,7 +295,7 @@ img {
     margin-right: 30px;
 }
 
-/* --------------------------------------------OUR TEAM-------------------------- */
+/* --------------------------------------------OUR TEAM SECTION-------------------------- */
 
 .team-section {
     background-color: var(--secondary-bg-color);
@@ -337,15 +358,11 @@ img {
     margin-right: 10px;
 }
 
-.team-social-link {
-    display: block;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.team-social {
     color: var(--icon-color);
 }
 
-.team-social-link:hover {
+.team-social:hover {
     color: var(--light-text-color);
     background-color: var(--accent-color);
 }
@@ -354,7 +371,7 @@ img {
     fill: currentColor;
 }
 
-/* --------------------------------------------- C L I E N T S ------------------------------------------------------------------------------ */
+/* --------------------------------------------- CLIENTS SECTION------------------------------------------------------------------------------ */
 
 .clients-list {
     display: flex;
@@ -367,9 +384,12 @@ img {
 
 .clients-link {
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
 
     color: var(--icon-color);
     border: 1px solid var(--icon-color);
@@ -383,6 +403,7 @@ img {
 }
 
 .clients-svg {
+    object-fit: cover;
     fill: currentColor;
 }
 
@@ -462,16 +483,12 @@ img {
     margin-right: 10px;
 }
 
-.footer-social-link {
-    display: block;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.footer-social {
     color: var(--light-text-color);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-link:hover {
+.footer-social:hover {
     background-color: var(--accent-color);
 }
 
